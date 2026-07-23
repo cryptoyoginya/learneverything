@@ -130,7 +130,11 @@ cp agents/*.md ~/.claude/agents/
 ### Опционально, для ещё лучшего обучения
 
 - [superpowers](https://github.com/obra/superpowers) — скилл brainstorming вскрывает, чего ты на самом деле хочешь от темы, до составления плана.
-- Скилл deep-research — глубокие погружения в спорные вопросы, где источники противоречат друг другу.
+- [deep-research](https://github.com/199-biotechnologies/claude-deep-research-skill) — глубокие погружения в спорные вопросы, где источники противоречат друг другу:
+
+  ```bash
+  git clone https://github.com/199-biotechnologies/claude-deep-research-skill.git ~/.claude/skills/deep-research
+  ```
 
 Без них всё работает: скилл заменяет их обычными вопросами и веб-ресёрчем.
 
