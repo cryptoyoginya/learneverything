@@ -1,0 +1,43 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"Понятия\"",
+      "color": { "a": 1, "rgb": 3065014 }
+    },
+    {
+      "query": "path:\"Уроки\"",
+      "color": { "a": 1, "rgb": 15245628 }
+    },
+    {
+      "query": "path:\"Источники\"",
+      "color": { "a": 1, "rgb": 4030207 }
+    },
+    {
+      "query": "file:MOC OR file:\"Карта темы\" OR file:\"План обучения\"",
+      "color": { "a": 1, "rgb": 10182117 }
+    },
+    {
+      "query": "file:\"Профиль ученика\" OR file:\"Терминология\" OR file:\"Практические выводы\" OR file:CLAUDE",
+      "color": { "a": 1, "rgb": 9080728 }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.35,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.42,
+  "repelStrength": 12,
+  "linkStrength": 0.85,
+  "linkDistance": 210,
+  "scale": 0.85,
+  "close": false
+}
