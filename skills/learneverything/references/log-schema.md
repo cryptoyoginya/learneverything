@@ -12,7 +12,7 @@
 
 **`lesson_done`** — урок прочитан и разобран:
 ```json
-{"date": "2026-07-23", "sphere": "Калории и нутриенты", "event": "lesson_done", "lesson": "03 Энергетический баланс", "concepts": ["BMR", "NEAT", "TEF"], "questions_total": 4, "questions_ok": 3, "user_flags": ["не поняла адаптивный термогенез"]}
+{"date": "2026-07-23", "sphere": "Имя сферы", "event": "lesson_done", "lesson": "03 Название урока", "concepts": ["Понятие 1", "Понятие 2", "Понятие 3"], "questions_total": 4, "questions_ok": 3, "user_flags": ["не поняла Понятие 2"]}
 ```
 `user_flags` — суть `???`-пометок и вопросов пользователя своими словами.
 
@@ -29,19 +29,19 @@
 
 **`retrieval`** — результат повторения по расписанию:
 ```json
-{"date": "...", "sphere": "...", "event": "retrieval", "concept": "BMR", "ok": true, "streak": 2}
+{"date": "...", "sphere": "...", "event": "retrieval", "concept": "Понятие 1", "ok": true, "streak": 2}
 ```
 `streak` — счётчик успешных извлечений в разных сессиях. `streak >= 3` — понятие усвоено (successive relearning), из расписания снимается. Неудача сбрасывает streak в 0.
 
 **`recommendation_viewed`** — пользователь смотрел/читал что-то из «Куда дальше»:
 ```json
-{"date": "...", "sphere": "...", "event": "recommendation_viewed", "item": "лекция про инсулин", "user_note": "что зацепило, своими словами"}
+{"date": "...", "sphere": "...", "event": "recommendation_viewed", "item": "лекция из «Куда дальше»", "user_note": "что зацепило, своими словами"}
 ```
 Следующий урок вплетает это в сократовский разбор: «ты смотрела лекцию про X — что зацепило?»
 
 **`module_done`** — модуль закрыт, заметки написаны:
 ```json
-{"date": "...", "sphere": "...", "event": "module_done", "module": "Модуль 2. Метаболизм", "notes_created": 6}
+{"date": "...", "sphere": "...", "event": "module_done", "module": "Модуль 2. Название модуля", "notes_created": 6}
 ```
 
 **`course_event`** — крупные вехи: курс создан, план согласован, источники согласованы, курс завершён:
