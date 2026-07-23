@@ -1,0 +1,49 @@
+/* learneverything: кастомные callouts под механики обучения + типографика чтения */
+
+/* Читаемая колонка */
+.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-sizer {
+  --file-line-width: 44em;
+}
+
+/* Pretest — проверь интуицию */
+.callout[data-callout="pretest"] {
+  --callout-color: 130, 100, 210;
+  --callout-icon: lucide-compass;
+}
+
+/* Миф и разбор (refutation) */
+.callout[data-callout="myth"] {
+  --callout-color: 220, 80, 80;
+  --callout-icon: lucide-flame;
+}
+
+/* Проверь себя (retrieval) */
+.callout[data-callout="recall"] {
+  --callout-color: 60, 140, 220;
+  --callout-icon: lucide-brain;
+}
+
+/* Что запомнить (Cornell-итог) */
+.callout[data-callout="core"] {
+  --callout-color: 40, 160, 100;
+  --callout-icon: lucide-anchor;
+  font-size: 1.02em;
+}
+
+/* Этого не было в твоих источниках */
+.callout[data-callout="outside"] {
+  --callout-color: 230, 150, 40;
+  --callout-icon: lucide-globe;
+}
+
+/* Куда дальше */
+.callout[data-callout="next"] {
+  --callout-color: 120, 120, 130;
+  --callout-icon: lucide-signpost;
+}
+
+/* Сноски компактнее */
+.footnotes { font-size: 0.9em; opacity: 0.85; }
+
+/* Таблицы: полная ширина, спокойные линии */
+.markdown-preview-view table { width: 100%; }
