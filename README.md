@@ -112,6 +112,8 @@ graph LR
 
 Vault создаётся на сферу, то есть на широкую область знания. Тем внутри может быть сколько угодно: они живут модулями плана, и новая тема добавляется модулями в тот же vault, а не отдельной базой.
 
+Читать можно не только в Obsidian: в интервью выбирается режим — Obsidian, чистый markdown или Notion. В режиме Notion курс зеркалится в страницы Notion через официальный [Notion MCP](https://developers.notion.com/docs/mcp) (callout-блоки, mermaid-схемы и структура подстраниц сохраняются), отвечать на вопросы уроков и ставить пометки `???` можно прямо там. Локальные файлы при этом остаются памятью курса.
+
 Жирный шрифт в конспектах зарезервирован под слой выжимки: скольжение по жирному читается как краткий пересказ (Progressive Summarization). Кастомные callouts в Obsidian подсвечивают механики: «Проверь интуицию», «Миф и разбор», «Что запомнить».
 
 ## Установка
@@ -134,6 +136,12 @@ cp agents/*.md ~/.claude/agents/
 
   ```bash
   git clone https://github.com/199-biotechnologies/claude-deep-research-skill.git ~/.claude/skills/deep-research
+  ```
+
+- Notion MCP — если хочешь вести конспекты в Notion вместо Obsidian:
+
+  ```bash
+  claude mcp add --transport http notion https://mcp.notion.com/mcp
   ```
 
 Без них всё работает: скилл заменяет их обычными вопросами и веб-ресёрчем.
